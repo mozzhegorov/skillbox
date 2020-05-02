@@ -38,7 +38,7 @@ if ( $method === 'POST' ) {
 	}
 }
 
-$message = "<table style='width: 50%;'>ПОступила заявка $message</table>";
+$message = "Поступила заявка <table style='width: 50%;'> $message</table>";
 
 function adopt($text) {
 	return '=?UTF-8?B?'.Base64_encode($text).'?=';
@@ -49,4 +49,4 @@ $headers = "MIME-Version: 1.0" . PHP_EOL .
 'From: '.adopt($project_name).' <'.$admin_email.'>' . PHP_EOL .
 'Reply-To: '.$admin_email.'' . PHP_EOL;
 
-mail($admin_email, adopt($form_subject), $message, $headers, );
+mail($admin_email, adopt($form_subject), $message, $headers);
