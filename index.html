@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Дмитрий Алексеев: веб-верстка и другое</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel="stylesheet" href="css/swiper.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/fonts.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/fontello.css'>
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/jquery.inputmask.min.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/script.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__left">
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <nav class="header__nav nav">
+                    <div class="nav__popup">
+                        <ul class="nav__list--popup">
+                            <li class="nav__item--popup"><a class="nav__link" href=".services">Услуги</a></li>
+                            <li class="nav__item--popup"><a class="nav__link" href=".examples">Портфолио</a></li>
+                            <li class="nav__item--popup"><a class="nav__link" href=".cost">Стоимость</a></li>
+                        </ul>
+                    </div>
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link" href=".services">Услуги</a></li>
+                        <li class="nav__item"><a class="nav__link" href=".examples">Портфолио</a></li>
+                        <li class="nav__item"><a class="nav__link" href=".cost">Стоимость</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__right">
+                <a class="header__phone phone">
+                    +7 (499) 995-55-77
+                </a>
+                <a href="#" class="header__phone-icon">
+                    &#xe801;                    
+                </a>
+                <button class="header__callback btn btn--popup">
+                    Заказать звонок
+                </button>
+            </div>   
+        </div>
+    </header>
+    <main>
+        <div class="popup">
+            <form action="">
+                <div class="popup__container form">
+                    <input type="hidden" name="project_name" value="Тест">
+                    <input type="hidden" name="admin_email" value="denislegrace@gmail.com">
+                    <input type="hidden" name="form_subject" value="Тема">
+                    <h2 class="form__title title">Заказать звонок</h2>
+                    <label class="form__input input">
+                        <span class="input__span">Ваше имя</span>
+                        <input class="input__input" type="text" name="Имя">
+                    </label>
+                    <label class="form__input input">
+                        <span class="input__span">Номер телефона</span>
+                        <input class="input__input" type="tel" name="Телефон" placeholder="+7 (___) ___-__-__">
+                    </label>
+                    <input class="form__button btn btn--filled" type="submit" value="Отправить запрос">
+                    <label class="form__check check">
+                        <input id="ch" class="check__checkbox" type="checkbox" name='Согласие'>
+                        <span class="check__span" >Нажатием на кнопку я даю свое согласие на обработку персональных данных
+                        в соответствии с указанными здесь словиями.</span>
+                    </label>
+                </div>
+            </form>
+        </div>
+        <section class="bio">
+            <div class="symbols">
+                <span class="">{&nbsp;}</span>
+                <span class="">#</span>
+                <span class="">&lt;/&gt;</span>
+                <span class="">&lt;div&gt;</span>
+                <span class="">&lt;div&gt;</span>
+                <span class="">&lt;/&gt;</span>
+            </div>
+            <div class="container-1500 bio__container">
+                <div class="bio__info info">
+                    <h1 class="info__name">
+                        Дмитрий Алексеев
+                    </h1>
+                    <h1 class="info__prof">
+                        Frontend-разработчик и веб-верстальщик
+                    </h1>
+                    <button class="info__more btn btn--filled btn--popup">
+                        Узнать больше
+                    </button>
+                </div>
+                <div class="bio__pic-container">
+                    <picture class="bio__man">
+                        <source media="(max-width: 457px)" srcset="img/man_320.png">            
+                        <img class="bio__man-img" src="img/man.png" alt="Это я">            
+                    </picture>
+                    <!-- <div class="bio__man">
+                        <img class="bio__man-img" src="img/man.png" alt="Это я">
+                    </div> -->
+                    <picture class="bio__svg">
+                        <source media="(max-width: 320px)" srcset="img/Ellip.svg"> 
+                        <source media="(max-width: 1340px)" srcset="img/Ellipse_1024.svg">           
+                        <img src="img/Ellipse.svg">            
+                    </picture>
+                </div>
+            </div>
+        </section>
+            <section class="services">
+                <div class="container">
+                    <h2 class="services__title title">
+                        Что я делаю
+                    </h2>
+                    <ul class="services__list">
+                        <li class="services__list-item service-item">
+                            <img src="img/tools-and-utensils.png" alt="" class="service-item__img">
+                            <p class="service-item__span">
+                                Вёрстка лендинг–страниц и&nbsp;сайтов любой сложности
+                            </p>
+                        </li>
+                        <li class="services__list-item service-item">
+                            <img src="img/responsive.png" alt="" class="service-item__img">
+                            <p class="service-item__span">
+                                Адаптивная вёрстка под&nbsp;все браузеры и устройства
+                            </p>
+                        </li>
+                        <li class="services__list-item service-item">
+                            <img src="img/programming.png" alt="" class="service-item__img">
+                            <p class="service-item__span">
+                                Frontend–разработка и&nbsp;программирование
+                            </p>
+                        </li>
+                        <li class="services__list-item service-item">
+                            <img src="img/coding_(1).png" alt="" class="service-item__img">
+                            <p class="service-item__span">
+                                Исправление и доработка существующей вёрстки
+                            </p>
+                        </li>
+                    </ul>
+                    <button class="services__cost btn btn--filled btn--popup">
+                        Узнать стоимость
+                    </button>
+                </div>
+            </section>
+            <section class="examples">
+                <div class="container">
+                    <h2 class="examples__title title">
+                        Примеры моих работ
+                    </h2>
+                    <div class="examples__list swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="examples__list-item example-item swiper-slide">
+                                <img src="img/Layer_2.png" alt="" class="example-item__img">
+                                <span class="example-item__span">
+                                    Сайт психолога Веры Антоновой
+                                </span>
+                            </div>
+                            <div class="examples__list-item example-item swiper-slide">
+                                <img src="img/Layer_1.png" alt="" class="example-item__img">
+                                <span class="example-item__span">
+                                    Сайт магазина детской одежды
+                                </span>
+                            </div>
+                            <div class="examples__list-item example-item swiper-slide">
+                                <img src="img/Layer_3.png" alt="" class="example-item__img">
+                                <span class="example-item__span">
+                                    Сайт магазина «Рыболов»
+                                </span>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"> </div>
+                    </div>
+                    <div class="examples__arrows buttons_arrows container-buttons">
+                        <button class="buttons_arrows__left arrow">
+                            <img src="img/arrow.png" alt="Стрелка влево" class="arrow__left">
+                        </button>
+                        <button class="buttons_arrows__right arrow">
+                            <img src="img/arrow.png" alt="Стрелка влево" class="arrow__right">
+                        </button>
+                    </div>
+                    <button class="examples__order btn btn--filled btn--popup">
+                        Заказать проект
+                    </button>
+                </div>
+            </section>
+        </div>
+        <section class="cost">
+            <div class="symbols-back">
+                <span class="">{&nbsp;}</span>
+                <span class="">#</span>
+                <span class="">&lt;div&gt;</span>
+                <span class="">&lt;/&gt;</span>
+                <span class="">{&nbsp;}</span>
+            </div>
+            <div class="cost__container text">
+                <h2 class="text__title">
+                    Адаптивная вёрстка под все устройства и&nbsp;браузеры от 1000 рублей всего за&nbsp;4&nbsp;часа.*
+                </h2>
+                <p class="text__p">
+                    Срок и стоимость могут отличаться от&nbsp;заявленных и рассчитываются  индивидуально, в&nbsp;зависимости от&nbsp;сложности задач.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__head fhead">
+                <div class="fhead__left">
+                    <nav class="fhead__nav nav">
+                        <ul class="nav__list">
+                            <li class="nav__item nav__item--footer"><a class="nav__link nav__link--footer" href=".services">Услуги</a></li>
+                            <li class="nav__item nav__item--footer"><a class="nav__link nav__link--footer" href=".examples">Портфолио</a></li>
+                            <li class="nav__item nav__item--footer"><a class="nav__link nav__link--footer" href=".cost">Стоимость</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="fhead__center">
+                    <a href="#" class="fhead__center-phone phone">&#xe801; <span class="phone__span">+7 (499) 995-77-55</span></a>
+                    <a href="#" class="fhead__center-email email">&#xf0e0; <span class="email__span">dmitry@alekseev.com</span></a>
+                </div>
+                <div class="fhead__right">
+                    <button class="fhead__right-callback btn btn--popup">
+                        Заказать звонок
+                    </button>
+                    <ul class="fhead__social social-items">
+                        <li class="social-items__item"><a href="#" class="social-items__link--vk"></a></li>
+                        <li class="social-items__item"><a href="#" class="social-items__link--fb"></a></li>
+                        <li class="social-items__item"><a href="#" class="social-items__link--ig"></a></li>
+                        <li class="social-items__item"><a href="#" class="social-items__link--tw"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__foot">
+            © Дмитрий Алексеев, 2016 – 2018
+        </div>
+    </footer>
+</body>
+</html>
