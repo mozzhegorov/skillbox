@@ -38,7 +38,7 @@ $(document).ready(function () {
                     slidesPerView: 3,
                     spaceBetween: 20,
             },
-            1024: {
+            576: {
                     slidesPerView: 2,
                     spaceBetween: 36,
                     pagination: {
@@ -58,8 +58,8 @@ $(document).ready(function () {
             },
         },      
         navigation: {
-            nextEl: '.buttons_arrows__left',
-            prevEl: '.buttons_arrows__right',
+            prevEl: '.buttons_arrows__left',
+            nextEl: '.buttons_arrows__right',
         },
     });
 
