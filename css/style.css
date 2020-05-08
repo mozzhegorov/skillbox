@@ -1534,15 +1534,6 @@ picture {
 .header__burger:after {
     top: 39px;
 }
-/* Hover */
-.header__burger:hover:before {
-    top: 6px;
-    background: #fa0891;
-}
-.header__burger:hover:after {
-    top: 22px;
-    background: #fa0891;
-}
 /* Click */
 .header__burger.cross span {
     opacity: 0;
@@ -1596,11 +1587,6 @@ picture {
     .header__burger:after {
         top: 22px;
     }
-    /* Hover */
-    .header__burger:hover:before {
-        top: 14px;
-        background: #fa0891;
-    }
 
     .cross {
         margin-top: -3px;
@@ -1632,20 +1618,22 @@ picture {
     }
 }
 
-.nav__list--popup {
-    position: absolute;
-    top: 85px;
-    height: 100%;
-    background-color: #F9F9F9;
-    z-index: 5;
-    left: 0px;
-    width: 100%;
-}
-
-.nav__item--popup {
-    margin-left: 50px;
-    margin-top: 0;
-    display: block;
+@media (max-width: 1024px) {
+    .nav__list--popup {
+        position: absolute;
+        top: 85px;
+        height: 100%;
+        background-color: #F9F9F9;
+        z-index: 5;
+        left: 0px;
+        width: 100%;
+    }
+    
+    .nav__item--popup {
+        margin-left: 50px;
+        margin-top: 20px;
+        display: block;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1655,7 +1643,6 @@ picture {
     
     .nav__item--popup {
         margin-left: 20px;
-        margin-top: 20px;
     }
 }
 
@@ -1670,4 +1657,10 @@ picture {
         width: initial;
         height: initial;
     }
+}
+
+.disable-scroll {
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
 }
