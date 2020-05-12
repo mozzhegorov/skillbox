@@ -44,9 +44,9 @@
                 <a class="header__phone phone">
                     +7 (499) 995-55-77
                 </a>
-                <button class="header__callback btn btn--popup">
-                    <span class="header__button-span">Заказать звонок</span>
-                    <span class="header__button-icon">&#xe801;</span> 
+                <button class="header__callback btn btn--popup header__button-span">
+                    Заказать звонок
+                    <!-- <span class="header__button-icon">&#xe801;</span>  -->
                 </button>
             </div>   
         </div>
@@ -81,89 +81,88 @@
                     <picture class="bio__svg">
                         <source media="(max-width: 320px)" srcset="img/Ellip.svg"> 
                         <source media="(max-width: 1366px)" srcset="img/Ellipse_1024.svg">           
-                        <img src="img/Ellipse.svg">            
+                        <img src="img/Ellipse.svg" alt="Эллипс фона">            
                     </picture>
                 </div>
             </div>
         </section>
-            <section class="services">
-                <div class="container services__container">
-                    <h2 class="services__title title">
-                        Что я делаю
-                    </h2>
-                    <ul class="services__list">
-                        <li class="services__list-item service-item">
-                            <img src="img/tools-and-utensils.png" alt="" class="service-item__img">
-                            <span class="service-item__span">
-                                Вёрстка лендинг–страниц и&nbsp;сайтов любой сложности
+        <section class="services">
+            <div class="container services__container">
+                <h2 class="services__title title">
+                    Что я делаю
+                </h2>
+                <ul class="services__list">
+                    <li class="services__list-item service-item">
+                        <img src="img/tools-and-utensils.png" alt="" class="service-item__img">
+                        <span class="service-item__span">
+                            Вёрстка лендинг–страниц и&nbsp;сайтов любой сложности
+                        </span>
+                    </li>
+                    <li class="services__list-item service-item">
+                        <img src="img/responsive.png" alt="" class="service-item__img">
+                        <span class="service-item__span">
+                            Адаптивная вёрстка под&nbsp;все браузеры и устройства
+                        </span>
+                    </li>
+                    <li class="services__list-item service-item">
+                        <img src="img/programming.png" alt="" class="service-item__img">
+                        <span class="service-item__span">
+                            Frontend–разработка и&nbsp;программирование
+                        </span>
+                    </li>
+                    <li class="services__list-item service-item">
+                        <img src="img/coding_(1).png" alt="" class="service-item__img">
+                        <span class="service-item__span">
+                            Исправление и доработка существующей вёрстки
+                        </span>
+                    </li>
+                </ul>
+                <button class="services__cost btn btn--filled btn--popup">
+                    Узнать стоимость
+                </button>
+            </div>
+        </section>
+        <section class="examples">
+            <div class="container">
+                <h2 class="examples__title title">
+                    Примеры моих работ
+                </h2>
+                <div class="examples__list swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="examples__list-item example-item swiper-slide">
+                            <img src="img/Layer_2.png" alt="" class="example-item__img">
+                            <span class="example-item__span">
+                                Сайт психолога Веры Антоновой
                             </span>
-                        </li>
-                        <li class="services__list-item service-item">
-                            <img src="img/responsive.png" alt="" class="service-item__img">
-                            <span class="service-item__span">
-                                Адаптивная вёрстка под&nbsp;все браузеры и устройства
-                            </span>
-                        </li>
-                        <li class="services__list-item service-item">
-                            <img src="img/programming.png" alt="" class="service-item__img">
-                            <p class="service-item__span">
-                                Frontend–разработка и&nbsp;программирование
-                            </span>
-                        </li>
-                        <li class="services__list-item service-item">
-                            <img src="img/coding_(1).png" alt="" class="service-item__img">
-                            <span class="service-item__span">
-                                Исправление и доработка существующей вёрстки
-                            </span>
-                        </li>
-                    </ul>
-                    <button class="services__cost btn btn--filled btn--popup">
-                        Узнать стоимость
-                    </button>
-                </div>
-            </section>
-            <section class="examples">
-                <div class="container">
-                    <h2 class="examples__title title">
-                        Примеры моих работ
-                    </h2>
-                    <div class="examples__list swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="examples__list-item example-item swiper-slide">
-                                <img src="img/Layer_2.png" alt="" class="example-item__img">
-                                <span class="example-item__span">
-                                    Сайт психолога Веры Антоновой
-                                </span>
-                            </div>
-                            <div class="examples__list-item example-item swiper-slide">
-                                <img src="img/Layer_1.png" alt="" class="example-item__img">
-                                <span class="example-item__span">
-                                    Сайт магазина детской одежды
-                                </span>
-                            </div>
-                            <div class="examples__list-item example-item swiper-slide">
-                                <img src="img/Layer_3.png" alt="" class="example-item__img">
-                                <span class="example-item__span">
-                                    Сайт магазина «Рыболов»
-                                </span>
-                            </div>
                         </div>
-                        <div class="swiper-pagination"> </div>
+                        <div class="examples__list-item example-item swiper-slide">
+                            <img src="img/Layer_1.png" alt="" class="example-item__img">
+                            <span class="example-item__span">
+                                Сайт магазина детской одежды
+                            </span>
+                        </div>
+                        <div class="examples__list-item example-item swiper-slide">
+                            <img src="img/Layer_3.png" alt="" class="example-item__img">
+                            <span class="example-item__span">
+                                Сайт магазина «Рыболов»
+                            </span>
+                        </div>
                     </div>
-                    <div class="examples__arrows buttons_arrows container-buttons">
-                        <button class="buttons_arrows__left arrow">
-                            <img src="img/arrow.png" alt="Стрелка влево" class="arrow__left">
-                        </button>
-                        <button class="buttons_arrows__right arrow">
-                            <img src="img/arrow.png" alt="Стрелка влево" class="arrow__right">
-                        </button>
-                    </div>
-                    <button class="examples__order btn btn--filled btn--popup">
-                        Заказать проект
+                    <div class="swiper-pagination"> </div>
+                </div>
+                <div class="examples__arrows buttons_arrows container-buttons">
+                    <button class="buttons_arrows__left arrow">
+                        <img src="img/arrow.png" alt="Стрелка влево" class="arrow__left">
+                    </button>
+                    <button class="buttons_arrows__right arrow">
+                        <img src="img/arrow.png" alt="Стрелка влево" class="arrow__right">
                     </button>
                 </div>
-            </section>
-        </div>
+                <button class="examples__order btn btn--filled btn--popup">
+                    Заказать проект
+                </button>
+            </div>
+        </section>
         <section class="cost">
             <div class="symbols-back">
                 <span class="">{&nbsp;}</span>
@@ -216,7 +215,7 @@
         </div>
     </footer>        
     <div class="popup">
-        <form action="" class="popup__container form">
+        <form class="popup__container form">
             <input type="hidden" name="project_name" value="Тест">
             <input type="hidden" name="admin_email" value="denislegrace@gmail.com">
             <input type="hidden" name="form_subject" value="Заявка с личного сайта">
@@ -236,6 +235,12 @@
                 в соответствии с указанными здесь словиями.</span>
             </label>
         </form>
+    </div>        
+    <div class="popup-sended">
+        <div class="popup-sended__container">
+            <h2 class="popup-sended__title title">Ваша заявка успешно принята!</h2>
+            <input class="popup-sended__button btn btn--filled" type="submit" value="Продолжить">
+        </div>
     </div>
 </body>
 </html>

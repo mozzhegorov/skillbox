@@ -1,7 +1,9 @@
 $(document).ready(function () {
+    // Выход символов 
     $(".symbols span").addClass('symbols__symbol');
     $(".symbols-back span").addClass('symbols-back__symbol');
 
+    // ПЛавная навигация по странице
     $(".nav").on("click","a", function (event) {
         event.preventDefault();
         $('.header__burger').removeClass('cross');
@@ -25,12 +27,13 @@ $(document).ready(function () {
         }
     });
 
+    // Модальное окно отправки заявки
     $('.btn--popup').click(function() {
-        $('.popup').toggleClass('show');
-        $('body').toggleClass('disable-scroll');
+        $('.popup').addClass('show');
+        $('body').addClass('disable-scroll');
     });
       
-    
+    // Свайпер
     var mySwiper = new Swiper('.swiper-container', {
         loop: true,
         slidesPerView: 3,
@@ -65,13 +68,11 @@ $(document).ready(function () {
         },
     });
 
-
+    // Маска ввода телефона
     $('input[type="tel"]').inputmask({ "mask": "+7 (999) 999-9999" }); //specifying options
-
-
     $('select').styler();
 
-    
+    // Работа с модальным окном, обработка формы
     $('form').each(function () {  
         $(this).validate({
             errorPlacement(error, element) {
@@ -110,9 +111,14 @@ $(document).ready(function () {
                 // eslint-disable-next-line func-names
             }).done(() => {
 
-            console.log('Reset')
+            let name = $("input[name='Имя']").val();
             th.trigger('reset');
-            alert('Ваша заявка принята')
+            $('.popup').removeClass('show');
+            $('.popup-sended').addClass('show');
+
+            console.log(name)
+            $('.popup-sended__title').text(name + ', Ваша заявка успешно принята!')
+
         });
 
         return false;
@@ -120,6 +126,13 @@ $(document).ready(function () {
     });
     });   
 
+    // Открытие модального окна подтверждения успешной отправки
+    $('.popup-sended__button').click(function() {
+        $('.popup-sended').removeClass('show');
+        $('body').removeClass('disable-scroll');
+    })
+
+    // Работа с бургером, всплывающая навигация
     $('.header__burger').click(function() {
         if(!$('.header__burger').hasClass('cross')){
             $('body').css({
@@ -149,13 +162,14 @@ $(document).ready(function () {
         }
       });
   
-      $('.nav__link').click(function() {
-          $('.header__burger').removeClass('cross');
-          $('.nav__popup').hide();
-          $('.header__nav .nav__list').removeClass('nav__list--popup');
-          $('.header__nav .nav__item').removeClass('nav__item--popup');
-          $('.header .nav__list').css({
-              'display': 'none' 
-          })
-        });
+    // Скрытие всплывающего меню при переходе 
+    $('.nav__link').click(function() {
+        $('.header__burger').removeClass('cross');
+        $('.nav__popup').hide();
+        $('.header__nav .nav__list').removeClass('nav__list--popup');
+        $('.header__nav .nav__item').removeClass('nav__item--popup');
+        $('.header .nav__list').css({
+            'display': 'none' 
+        })
+    });
 });
