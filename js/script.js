@@ -38,28 +38,23 @@ $(document).ready(function () {
         loop: true,
         slidesPerView: 3,
         spaceBetween: 20,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true,
+        },
         breakpoints: {
-            1920: {
+            1025: {
                     slidesPerView: 3,
                     spaceBetween: 20,
             },
             576: {
                     slidesPerView: 2,
                     spaceBetween: 36,
-                    pagination: {
-                        el: '.swiper-pagination',
-                        type: 'bullets',
-                        clickable: true,
-                      },
             },
             320: {
                     slidesPerView: 1,
                     spaceBetween: 36,  
-                    pagination: {
-                        el: '.swiper-pagination',
-                        type: 'bullets',
-                        clickable: true,
-                      },
             },
         },      
         navigation: {
@@ -152,7 +147,7 @@ $(document).ready(function () {
           $('.header__nav .nav__list').removeClass('nav__list--popup');
           $('.header__nav .nav__item').removeClass('nav__item--popup');
           $('.header .nav__list').css({
-              'display': 'none' 
+              'display': '' 
           })
           $('body').css({
               'width' : '',

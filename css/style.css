@@ -808,8 +808,15 @@ picture {
 }
 
 .swiper-pagination-bullet {
-    width: 18px;
-    height: 18px;
+    display: none;
+}
+
+@media (max-width: 1024px) {    
+    .swiper-pagination-bullet {
+        width: 18px;
+        height: 18px;
+        display: inline-block;
+    }
 }
 
 @media (max-width: 320px) {    
@@ -937,6 +944,13 @@ picture {
     .examples__list {
         margin-top: 112px;
         padding-bottom: 133px;
+    }
+}
+
+@media (max-width: 960px) {
+    .examples__list {
+        margin-top: 112px;
+        padding-bottom: 80px;
     }
 }
 
