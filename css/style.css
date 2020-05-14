@@ -734,6 +734,7 @@ picture {
     margin-top: 30px;
     text-align: center;
     display: block;
+    padding: 0 5px;
 }
 
 @media (max-width: 1024px) {
@@ -811,7 +812,7 @@ picture {
     display: none;
 }
 
-@media (max-width: 1024px) {    
+@media (max-width: 1366px) {    
     .swiper-pagination-bullet {
         width: 18px;
         height: 18px;
@@ -940,6 +941,12 @@ picture {
     padding-bottom: 0;
 }
 
+@media (max-width: 1366px) {
+    .examples__list {
+        padding-bottom: 100px;
+    }
+}
+
 @media (max-width: 1024px) {
     .examples__list {
         margin-top: 112px;
@@ -974,7 +981,7 @@ picture {
     top: -230px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1366px) {
     .buttons_arrows {
         display: none;
     }
